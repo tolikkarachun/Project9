@@ -1,0 +1,23 @@
+.btn {
+	padding: 20px 40px;
+	display: inline-block;
+	cursor: pointer;
+	border: 0;
+	outline: 0;
+	border-radius: $btnRadius;
+	font-family: $ff-main;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	letter-spacing: 1.3px;
+
+	&._primary {
+		background: $blue;
+		color: $white;
+		transition: $transition;
+		&:hover {
+			background: darken($blue, 10%);
+		}
+	}
+}

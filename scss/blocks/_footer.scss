@@ -1,0 +1,138 @@
+.footer {
+    padding-top: 60px;
+    border-top: 2px solid #E4E4E4;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+
+    &__start {
+        gap: 191px;
+    }
+
+    &__logo {}
+
+    &__desc {
+        margin-top: 26px;
+        margin-bottom: 40px;
+        max-width: 270px;
+        color: $Gray;
+        font-size: 14px;
+        font-family: $ff-main;
+        font-weight: 400;
+        line-height: 22.60px;
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin-bottom: 29px;
+
+        &_facebook {}
+
+        &_twitter {}
+
+        &_linkedin {}
+    }
+
+    &__start-center {
+
+        &_title {
+            color: $black;
+            font-size: 20px;
+            font-family: $ff-main;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        &_ul {}
+
+        &_li {}
+
+        &_a {
+            color: $black;
+            font-size: 14px;
+            font-family: $ff-main;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+    &__center-center {
+
+        &_title {
+            color: $black;
+            font-size: 20px;
+            font-family: $ff-main;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        &_ul {}
+
+        &_li {}
+
+        &_a {
+            color: $black;
+            font-size: 14px;
+            font-family: $ff-main;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+    &__center-end {
+
+        &_title {
+            color: $black;
+            font-size: 20px;
+            font-family: $ff-main;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        &_ul {}
+
+        &_li {}
+
+        &_a {
+            color: $black;
+            font-size: 14px;
+            font-family: $ff-main;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+    &__end {
+
+        &_title {
+            color: $black;
+            font-size: 20px;
+            font-family: $ff-main;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        &_ul {}
+
+        &_li {}
+
+        &_a {
+            color: $black;
+            font-size: 14px;
+            font-family: $ff-main;
+            font-weight: 400;
+            line-height: 28px;
+        }
+    }
+
+    &__year {
+        padding: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 2px solid #E4E4E4;
+        margin-bottom: 40px;
+    }
+}

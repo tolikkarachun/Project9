@@ -1,0 +1,16 @@
+@import 'reset';
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+@import 'base';
+
+@import 'components/btn';
+
+@import 'blocks/header';
+@import 'blocks/main-section';
+@import "blocks/clients-section";
+@import "blocks/business-section";
+@import "blocks/product-section";
+@import "blocks/say-section";
+@import "blocks/news-section";
+@import "blocks/footer";

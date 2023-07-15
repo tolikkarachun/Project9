@@ -1,0 +1,60 @@
+.main-section {
+	display: flex;
+	align-items: center;
+	gap: 26px;
+	margin-bottom: 141px;
+	justify-content: space-between;
+
+	@include tablet {
+		align-items: stretch;
+		flex-direction: column-reverse;
+	}
+
+	&__info {
+		max-width: 471px;
+		z-index: 2;
+	}
+
+	&__title {
+		color: $black;
+		font-family: $ff-main;
+		font-size: 40px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-bottom: 40px;
+	}
+
+	&__desc {
+		@include text($darkGrey, $ff-main, 16px, 400, 160%);
+		margin-bottom: 33px;
+	}
+
+	&__image {
+		position: relative;
+
+		img {
+			border-radius: 0px 0px 0px 200px;
+			position: relative;
+			@include tablet {
+				width: 100%;
+				border-radius: 12px;
+			}
+		}
+
+		&::before {
+			bottom: -101px;
+			right: 0;
+			position: absolute;
+			content: "";
+			display: block;
+			width: 178px;
+			height: 178px;
+			border-radius: 0px 0px 100px 0px;
+			background: $semiOrange;
+			@include mobile {
+				display: none;
+			}
+		}
+	}
+}

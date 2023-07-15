@@ -1,0 +1,100 @@
+.say-section {
+    margin-bottom: 148px;
+
+    &__title {
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 485px;
+        color: $black;
+        font-size: 40px;
+        font-family: $ff-main;
+        font-weight: 400;
+        margin-bottom: 17px;
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        margin-bottom: 113px;
+        max-width: 556px;
+        color: $Gray;
+        font-size: 18px;
+        font-family: $ff-main;
+        font-weight: 400;
+        line-height: 25.60px;
+    }
+
+    &__container-user {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 70px;
+    }
+
+    &__user-img  {
+        position: relative;
+
+        img {
+            position: relative;
+            border-radius: 500px 0px 500px 500px;
+            object-fit: fill;
+        }
+    }
+
+    &__info {
+
+        &_name {
+            max-width: 156px;
+            color: $black;
+            font-size: 24px;
+            font-family: $ff-main;
+            font-weight: 400;
+            margin-bottom: 21px;
+        }
+
+        &_response {
+            max-width: 532px;
+            color: $darkGrey;
+            font-size: 16px;
+            font-family: $ff-main;
+            font-weight: 400;
+            line-height: 25.60px;
+        }
+    }
+
+    &__friends {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 26px;
+        &_a {
+            top: 65px;
+            position: relative;
+        }
+
+        &_b {
+            position: relative;
+            top: 205px;
+            right: 109px;
+        }
+
+        &_c {
+            position: relative;
+            top: -105px;
+            right: -120px;
+        }
+
+        &_d {
+            position: relative;
+            top: 5px;
+        }
+
+        &_f {
+            position: relative;
+            top: 20px;
+            right: -95px;
+        }
+    }
+}

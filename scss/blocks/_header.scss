@@ -1,0 +1,46 @@
+.header {
+	padding-top: 42px;
+	padding-bottom: 35px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo {
+		width: 120px;
+		height: 34px;
+	}
+
+	&__ul {
+		display: flex;
+		align-items: center;
+		gap: 60px;
+
+		@include tablet {
+			position: fixed;
+			width: 300px;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: $blue;
+			z-index: 3;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			transform: translateX(-120%);
+		}
+	}
+
+	&__a {
+		color: $black;
+		font-family: $ff-main;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		letter-spacing: 0.16px;
+
+		@include tablet {
+			color: $white;
+		}
+	}
+}

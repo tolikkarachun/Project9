@@ -1,0 +1,249 @@
+.business-section {
+    display: flex;
+    align-items: center;
+    gap: 91px;
+    margin-bottom: 146px;
+
+    &__info {}
+
+    &__title {
+        max-width: 358px;
+        color: $black;
+        font-size: 40px;
+        font-family: $ff-main;
+        font-weight: 400;
+        margin-bottom: 20px
+    }
+
+    &__desk {
+        max-width: 396px;
+        color: $darkGrey;
+        font-size: 16px;
+        font-family: $ff-main;
+        font-weight: 400;
+        line-height: 25.60px;
+    }
+
+    &__planning {
+        padding-right: 42px;
+        width: 690px;
+        height: 847px;
+        background: #f7f6f6;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+             
+        }        
+        &_idea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin-top: 60px;
+            max-width: 308px;
+            max-height: 379px;
+            border-radius: 40px;
+            background: $white;
+            position: relative;
+        }
+
+        &_box {
+            width: 121px;
+            height: 121px;
+            padding: 24px;
+            background: #F1F7FF;
+            position: absolute;
+            border-radius: 20px;
+            margin-top: 39px;
+            margin-bottom: 31px;
+        }
+
+        &_financial {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;            
+            max-width: 308px;
+            max-height: 379px;
+            border-radius: 40px;
+            background: $white;
+            position: relative;
+        }
+
+        &_wallet {
+            width: 121px;
+            height: 121px;
+            padding: 24px;
+            background: #FFF7E3;
+            position: absolute;
+            border-radius: 20px;
+            margin-top: 39px;
+            margin-bottom: 31px;
+        }
+
+        &_development {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;           
+            max-width: 308px;
+            max-height: 379px;
+            border-radius: 40px;
+            background: $white;
+            position: relative;
+        }
+
+        &_code {
+            width: 121px;
+            height: 121px;
+            padding: 24px;
+            background: #FFF2F8;
+            position: absolute;
+            border-radius: 20px;
+            margin-top: 39px;
+            margin-bottom: 31px;
+        }
+
+        &_analisis {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            top: -57px;
+            max-width: 308px;
+            max-height: 379px;
+            border-radius: 40px;
+            background: $white;
+            position: relative;
+            &::before {
+                    bottom: -1184px;
+                    right: 163px;
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 120px;
+                    height: 120px;
+                    border: 10px solid #FF007A;
+                    border-radius: 50%;
+        }
+
+        &_chart {
+            width: 121px;
+            height: 121px;
+            padding: 24px;
+            background: #DEFFEE;
+            position: absolute;
+            border-radius: 20px;
+            margin-top: 39px;
+            margin-bottom: 31px;
+        }
+    }
+
+    &__planning-idea {
+
+        &_title {
+            max-width: 167px;
+            margin-top: 190px;
+            margin-bottom: 27px;
+            color: $black;
+            font-size: 24px;
+            font-family: $ff-main;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_desk {
+            max-width: 245px;
+            max-height: 44px;
+            margin-bottom: 57px;
+            color: $Gray;
+            font-size: 16px;
+            font-family: $ff-main;
+            font-weight: 400;
+            line-height: 22.40px;
+        }
+    }
+
+    &__planning-financial {
+
+        &_title {
+            max-width: 190px;
+            margin-top: 190px;
+            margin-bottom: 27px;
+            color: $black;
+            font-size: 24px;
+            font-family: $ff-main;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_desk {
+            max-width: 245px;
+            max-height: 44px;
+            margin-bottom: 57px;
+            color: $Gray;
+            font-size: 16px;
+            font-family: $ff-main;
+            font-weight: 400;
+            line-height: 22.40px;
+        }
+    }
+
+    &__planning-development {
+
+        &_title {
+            max-width: 239px;
+            margin-top: 190px;
+            margin-bottom: 27px;
+            color: $black;
+            font-size: 24px;
+            font-family: $ff-main;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_desk {
+            max-width: 245px;
+            max-height: 44px;
+            margin-bottom: 57px;
+            color: $Gray;
+            font-size: 16px;
+            font-family: $ff-main;
+            font-weight: 400;
+            line-height: 22.40px;
+        }
+    }
+
+    &__planning-analisis {
+
+        &_title {
+            max-width: 231px;
+            margin-top: 190px;
+            margin-bottom: 27px;
+            color: $black;
+            font-size: 24px;
+            font-family: $ff-main;
+            font-weight: 400;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &_desk {
+            max-width: 245px;
+            max-height: 44px;
+            margin-bottom: 57px;
+            color: $Gray;
+            font-size: 16px;
+            font-family: $ff-main;
+            font-weight: 400;
+            line-height: 22.40px;
+        }
+    }
+}
