@@ -1,64 +1,107 @@
 .news-section {
-        max-width: 1200px;
-        min-height: 292px;
+        max-width: 1200rem;
+        min-height: 292rem;
         background: #F4F9FF;
-        border-radius: 75px;
-        margin-bottom: 146px;
+        border-radius: 75rem;
+        margin-bottom: 146rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-left: 92px;
-        padding-right: 92px;
+        padding-left: 92rem;
+        padding-right: 92rem;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            padding: 30rem 0rem;
+            margin-bottom: 65rem;
+        }
+            @include mobile {
+                padding: 0rem 60rem 0rem 60rem;
+                border-radius: 40rem;
+                justify-content: space-evenly;
+            }
 
     &__info {
 
         &_title {
-            max-width: 386px;
+            max-width: 386rem;
             color: $black;
-            font-size: 40px;
+            font-size: 40rem;
             font-family: $ff-main;
             font-weight: 400;
-            margin-bottom: 17px;
+            margin-bottom: 17rem;
+            @include tablet {
+                text-align: center;
+                margin: 0 auto;
+            }
+                @include mobile {
+                    font-size: 30rem;
+                }
         }
 
         &_desc {
             color: $Gray;
-            font-size: 18px;
+            font-size: 18rem;
             font-family: $ff-main;
             font-weight: 400;
-            line-height: 28.60px;
+            line-height: 28.60rem;
+            @include tablet {
+                text-align: center;
+            }
+                @include mobile {
+                    font-size: 14rem;
+                }
         }
     }
 
     &__forms {
+        max-width: 479rem;
         background: $white;
-        border: 2px solid #F1F1F1;
+        border: 2rem solid #F1F1F1;
         display: inline-flex;
-        padding: 10px;
+        padding: 10rem;
         border-radius: $btnRadius;
-        gap: 57px;
+        gap: 57rem;
+        @include mobile {
+            padding: 5rem;
+            border-radius: 40rem;
+            gap: 15rem;
+        }
 
         &_input {
+            min-width: 179rem;
             border: none;
-            max-width: 479px;
             outline: none;
-            padding: 30px 0px;
-            padding-left: 34px; 
+            padding-left: 15rem;
+            border-radius: $btnRadius;
+            font-family: $ff-main;
+            font-size: 14rem;
+            @include mobile {
+                min-width: 123rem;
+                padding-left: 5rem;
+                border-radius: 40rem;
+                font-size: 10rem;
+            }
         }
     }
 
     &__button {
-        padding: 20px 40px;
+        padding: 20rem 40rem;
         border: none;
         background: $blue;
         color: $white;
-        font-size: 16px;
+        font-size: 16rem;
         font-family: $ff-main;
         font-weight: 400;
-        letter-spacing: 1.04px;
+        letter-spacing: 1.04rem;
         border-radius: $btnRadius;
         cursor: pointer;
         white-space: nowrap;
+        @include mobile {
+            padding: 10rem 15rem;
+            border-radius: 40rem;
+            font-size: 10rem;
+        }
     }
 
 }

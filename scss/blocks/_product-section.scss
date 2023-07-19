@@ -1,46 +1,78 @@
 .product-section {
 
-    margin-bottom: 137px;
+    margin-bottom: 137rem;
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 118px;
+        gap: 118rem;
+
+        @include desktop-small {
+            flex-direction: column-reverse;
+        }
+
     }
 
     &__img {
-        max-width: 550px;
         position: relative;
+
+            img {
+                width: 100%;
+                position: relative;
+            }
+                &::before {
+                        bottom: -55rem;
+                        right: -55rem;
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        width: 129rem;
+                        height: 129rem;
+                        background: #FFF5DB;
+                        border-radius: 50%;
+                    }
+                    @include tablet {
+                        margin-top: -85rem;
+                    }
+                        @include mobile {
+                            margin-bottom: -100rem;
+                            &::before {
+                                display: none;
+                        }
+                    }
     }    
-        &::before {
-            top: 2275px;
-            left: 582px;
-            position: absolute;
-            content: "";
-            display: block;
-            width: 129px;
-            height: 129px;
-            background: #FFF5DB;
-            border-radius: 50%;
-        }
-    &__info {}
+    &__info {
+        margin-top: -50rem;
+    }
 
     &__title {
-        max-width: 468px;
+        max-width: 468rem;
         color: $black;
-        font-size: 40px;
+        font-size: 40rem;
         font-family: $ff-main;
         font-weight: 400;
-        margin-bottom: 30px;
+        margin-bottom: 30rem;
+
+        @include desktop-small {
+            margin: 0 auto;
+            margin-top: 50rem;
+            margin-bottom: 30rem;
+            text-align: center;
+            font-size: 25rem;
+        }
     }
 
     &__desc {
-        max-width: 532px;
+        max-width: 532rem;
         color: $darkGrey;
-        font-size: 16px;
+        font-size: 16rem;
         font-family: $ff-main;
         font-weight: 400;
-        line-height: 25.60px;
+        line-height: 25.60rem;
+
+        @include desktop-small {
+            text-align: center;
+        }
     }
 }

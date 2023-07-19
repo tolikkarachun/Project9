@@ -1,8 +1,8 @@
 .main-section {
 	display: flex;
 	align-items: center;
-	gap: 26px;
-	margin-bottom: 141px;
+	gap: 26rem;
+	margin-bottom: 141rem;
 	justify-content: space-between;
 
 	@include tablet {
@@ -11,46 +11,49 @@
 	}
 
 	&__info {
-		max-width: 471px;
+		max-width: 471rem;
 		z-index: 2;
 	}
 
 	&__title {
 		color: $black;
 		font-family: $ff-main;
-		font-size: 40px;
+		font-size: 40rem;
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;
-		margin-bottom: 40px;
+		margin-bottom: 40rem;
+		@include mobile {
+			font-size: 30rem;
+		}
 	}
 
 	&__desc {
-		@include text($darkGrey, $ff-main, 16px, 400, 160%);
-		margin-bottom: 33px;
+		@include text($darkGrey, $ff-main, 16rem, 400, 160%);
+		margin-bottom: 33rem;
 	}
 
 	&__image {
 		position: relative;
 
 		img {
-			border-radius: 0px 0px 0px 200px;
+			border-radius: 0rem 0rem 0rem 200rem;
 			position: relative;
 			@include tablet {
 				width: 100%;
-				border-radius: 12px;
+				border-radius: 12rem;
 			}
 		}
 
 		&::before {
-			bottom: -101px;
+			bottom: -101rem;
 			right: 0;
 			position: absolute;
 			content: "";
 			display: block;
-			width: 178px;
-			height: 178px;
-			border-radius: 0px 0px 100px 0px;
+			width: 178rem;
+			height: 178rem;
+			border-radius: 0rem 0rem 100rem 0rem;
 			background: $semiOrange;
 			@include mobile {
 				display: none;

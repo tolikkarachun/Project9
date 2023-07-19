@@ -1,16 +1,16 @@
 .btn {
-	padding: 20px 40px;
+	padding: 20rem 40rem;
 	display: inline-block;
 	cursor: pointer;
 	border: 0;
 	outline: 0;
 	border-radius: $btnRadius;
 	font-family: $ff-main;
-	font-size: 20px;
+	font-size: 20rem;
 	font-style: normal;
 	font-weight: 400;
 	line-height: normal;
-	letter-spacing: 1.3px;
+	letter-spacing: 1.3rem;
 
 	&._primary {
 		background: $blue;

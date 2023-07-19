@@ -1,107 +1,230 @@
 .business-section {
     display: flex;
     align-items: center;
-    gap: 91px;
-    margin-bottom: 146px;
+    gap: 91rem;
+    margin-bottom: 146rem;
+    position: relative;
+        &::before {
+            bottom: 0rem;
+            right: 106rem;
+            position: absolute;
+            content: "";
+            display: block;
+            width: 120rem;
+            height: 120rem;
+            border: 10rem solid #FF007A;
+            border-radius: 50%;
+        }
+
+            @include tablet {
+                flex-direction: column;
+
+                &::before {
+                    bottom: 0rem;
+                    right: 90rem;
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    width: 120rem;
+                    height: 120rem;
+                    border: 10rem solid #FF007A;
+                    border-radius: 50%;
+                }
+            }
+
+            @include tablet-small {
+                height: 1900rem;
+                &::before {
+                    display: none;
+                }
+
+            }
 
     &__info {}
 
     &__title {
-        max-width: 358px;
+        max-width: 358rem;
         color: $black;
-        font-size: 40px;
+        font-size: 40rem;
         font-family: $ff-main;
         font-weight: 400;
-        margin-bottom: 20px
+        margin-bottom: 20rem;
+
+        @include desktop-small {
+            font-size: 30rem;
+        }
+        @include tablet {
+            text-align: center;
+            font-size: 40rem;
+
+        }
+        @include tablet-small {
+            margin: 0 auto;
+            margin-bottom: 30rem;
+        }
     }
 
     &__desk {
-        max-width: 396px;
+        max-width: 396rem;
         color: $darkGrey;
-        font-size: 16px;
+        font-size: 16rem;
         font-family: $ff-main;
         font-weight: 400;
-        line-height: 25.60px;
+        line-height: 25.60rem;
+            @include tablet {
+                text-align: center;
+            }
     }
 
-    &__planning {
-        padding-right: 42px;
-        width: 690px;
-        height: 847px;
-        background: #f7f6f6;
+    &__planning { 
+        max-width: 690rem;
+        max-height: 847rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 32px;
-             
-        }        
+        row-gap: 35rem;
+        column-gap: 35rem;
+        @include tablet {
+            min-width: 650rem;
+        }
+
+        @include tablet-small {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            p {
+                max-width: 245rem;
+                padding: 0 10rem;
+                color: $Gray;
+                font-size: 16rem;
+                font-family: $ff-main;
+                font-weight: 400;
+                line-height: 22.40rem;
+            }
+
+                
         &_idea {
             display: flex;
             flex-direction: column;
             align-items: center;
             text-align: center;
-            margin-top: 60px;
-            max-width: 308px;
-            max-height: 379px;
-            border-radius: 40px;
+            justify-content: space-evenly;
+            margin-top: 60rem;
+            max-width: 308rem;
+            max-height: 379rem;
+            border-radius: 40rem;
             background: $white;
-            position: relative;
+            box-shadow: 0rem 10rem 50rem rgba(0, 0, 0, 0.05);
+            border: 1rem #F2F2F2 solid;
+            h2 {
+                max-width: 167rem;
+                color: $black;
+                font-size: 24rem;
+                font-family: $ff-main;
+                font-weight: 400;
+            }
+            @include tablet {
+                margin-top: 0rem;
+            }
+                @include tablet-small {
+                    min-height: 379rem;
+                    min-width: 308rem;
+                    margin-bottom: 20rem;
+                }
+                @include mobile {
+                    max-width: 308rem;
+                }  
         }
-
-        &_box {
-            width: 121px;
-            height: 121px;
-            padding: 24px;
-            background: #F1F7FF;
-            position: absolute;
-            border-radius: 20px;
-            margin-top: 39px;
-            margin-bottom: 31px;
-        }
-
+            &_box {
+                width: 121rem;
+                height: 121rem;
+                padding: 24rem;
+                background: #F1F7FF;
+                border-radius: 20rem;
+            }
         &_financial {
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;            
-            max-width: 308px;
-            max-height: 379px;
-            border-radius: 40px;
+            text-align: center;  
+            justify-content: space-evenly;          
+            max-width: 308rem;
+            max-height: 379rem;
+            border-radius: 40rem;
             background: $white;
             position: relative;
+            box-shadow: 0rem 10rem 50rem rgba(0, 0, 0, 0.05);
+            border: 1rem #F2F2F2 solid;
+
+                h2 {
+                    max-width: 199rem;
+                    color: $black;
+                    font-size: 24rem;
+                    font-family: $ff-main;
+                    font-weight: 400;
+                }
+
+                @include tablet-small {
+                    min-height: 379rem;
+                    min-width: 308rem;
+                    margin-bottom: 20rem;
+                }
+                    @include mobile {
+                        max-width: 308rem;
+                    }
         }
 
         &_wallet {
-            width: 121px;
-            height: 121px;
-            padding: 24px;
+            width: 121rem;
+            height: 121rem;
+            padding: 24rem;
             background: #FFF7E3;
-            position: absolute;
-            border-radius: 20px;
-            margin-top: 39px;
-            margin-bottom: 31px;
+            border-radius: 20rem;
         }
 
         &_development {
             display: flex;
             flex-direction: column;
             align-items: center;
-            text-align: center;           
-            max-width: 308px;
-            max-height: 379px;
-            border-radius: 40px;
+            text-align: center;
+            justify-content: space-evenly;           
+            max-width: 308rem;
+            max-height: 379rem;
+            border-radius: 40rem;
             background: $white;
             position: relative;
+            box-shadow: 0rem 10rem 50rem rgba(0, 0, 0, 0.05);
+            border: 1rem #F2F2F2 solid;
+
+                h2 {
+                    max-width: 239rem;
+                    color: $black;
+                    font-size: 24rem;
+                    font-family: $ff-main;
+                    font-weight: 400;
+                }
+
+                    @include tablet {
+                        top: -30rem;
+                    }
+                        @include tablet-small {
+                            top: -10rem;
+                            min-height: 379rem;
+                            min-width: 308rem;
+                            margin-bottom: 20rem;
+                        }
+                            @include mobile {
+                                max-width: 308rem;
+                            }
         }
 
         &_code {
-            width: 121px;
-            height: 121px;
-            padding: 24px;
+            width: 121rem;
+            height: 121rem;
+            padding: 24rem;
             background: #FFF2F8;
-            position: absolute;
-            border-radius: 20px;
-            margin-top: 39px;
-            margin-bottom: 31px;
+            border-radius: 20rem;
         }
 
         &_analisis {
@@ -109,141 +232,45 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            top: -57px;
-            max-width: 308px;
-            max-height: 379px;
-            border-radius: 40px;
+            justify-content: space-evenly;
+            top: -57rem;
+            max-width: 308rem;
+            max-height: 379rem;
+            border-radius: 40rem;
             background: $white;
             position: relative;
-            &::before {
-                    bottom: -1184px;
-                    right: 163px;
-                    position: absolute;
-                    content: "";
-                    display: block;
-                    width: 120px;
-                    height: 120px;
-                    border: 10px solid #FF007A;
-                    border-radius: 50%;
+            box-shadow: 0rem 10rem 50rem rgba(0, 0, 0, 0.05);
+            border: 1rem #F2F2F2 solid;
+
+                h2 {
+                    max-width: 231rem;
+                    color: $black;
+                    font-size: 24rem;
+                    font-family: $ff-main;
+                    font-weight: 400;
+                }
+
+                    @include tablet {
+                        top: -30rem;
+                    }
+                        @include tablet-small {
+                            top: -10rem;
+                            min-height: 379rem;
+                            min-width: 308rem;
+                            margin-bottom: 20rem;
+                        }
+                            @include mobile {
+                                max-width: 308rem;
+                            }
         }
+            &_chart {
+                width: 121rem;
+                height: 121rem;
+                padding: 24rem;
+                background: #DEFFEE;
+                border-radius: 20rem;
+            }
 
-        &_chart {
-            width: 121px;
-            height: 121px;
-            padding: 24px;
-            background: #DEFFEE;
-            position: absolute;
-            border-radius: 20px;
-            margin-top: 39px;
-            margin-bottom: 31px;
-        }
-    }
-
-    &__planning-idea {
-
-        &_title {
-            max-width: 167px;
-            margin-top: 190px;
-            margin-bottom: 27px;
-            color: $black;
-            font-size: 24px;
-            font-family: $ff-main;
-            font-weight: 400;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &_desk {
-            max-width: 245px;
-            max-height: 44px;
-            margin-bottom: 57px;
-            color: $Gray;
-            font-size: 16px;
-            font-family: $ff-main;
-            font-weight: 400;
-            line-height: 22.40px;
-        }
-    }
-
-    &__planning-financial {
-
-        &_title {
-            max-width: 190px;
-            margin-top: 190px;
-            margin-bottom: 27px;
-            color: $black;
-            font-size: 24px;
-            font-family: $ff-main;
-            font-weight: 400;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &_desk {
-            max-width: 245px;
-            max-height: 44px;
-            margin-bottom: 57px;
-            color: $Gray;
-            font-size: 16px;
-            font-family: $ff-main;
-            font-weight: 400;
-            line-height: 22.40px;
-        }
-    }
-
-    &__planning-development {
-
-        &_title {
-            max-width: 239px;
-            margin-top: 190px;
-            margin-bottom: 27px;
-            color: $black;
-            font-size: 24px;
-            font-family: $ff-main;
-            font-weight: 400;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &_desk {
-            max-width: 245px;
-            max-height: 44px;
-            margin-bottom: 57px;
-            color: $Gray;
-            font-size: 16px;
-            font-family: $ff-main;
-            font-weight: 400;
-            line-height: 22.40px;
-        }
-    }
-
-    &__planning-analisis {
-
-        &_title {
-            max-width: 231px;
-            margin-top: 190px;
-            margin-bottom: 27px;
-            color: $black;
-            font-size: 24px;
-            font-family: $ff-main;
-            font-weight: 400;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        &_desk {
-            max-width: 245px;
-            max-height: 44px;
-            margin-bottom: 57px;
-            color: $Gray;
-            font-size: 16px;
-            font-family: $ff-main;
-            font-weight: 400;
-            line-height: 22.40px;
-        }
     }
 }
+

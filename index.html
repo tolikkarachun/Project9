@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>A+ Studio</title>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
 </head>
 
@@ -15,6 +16,10 @@
 				<img src="img/logo.svg" alt="A+ Studio">
 			</a>
 			<nav class="header__nav">
+				<label for="menu" class="burger-icon">
+					<span class="material-icons"> menu </span>
+				</label>
+				<input id="menu" class="burger-input" type="checkbox">
 				<ul class="header__ul">
 					<li class="header__li"><a href="/" class="header__a">Home</a></li>
 					<li class="header__li"><a href="/" class="header__a">What We Do</a></li>
@@ -61,33 +66,29 @@
 					<a href="" class="business-section__planning_box">
 						<img src="img/features/box-search1.png" alt="box">
 					</a>
-					<div class="business-section__planning-idea_title">Business Idea Planning</div>
-					<div class="business-section__planning-idea_desk">We present you a proposal and discuss
-						niffty-gritty like</div>
+					<h2>Business Idea Planning</h2>
+					<p>We present you a proposal and discuss niffty-gritty like</p>
 				</div>
 				<div class="business-section__planning_financial">
 					<a href="" class="business-section__planning_wallet">
 						<img src="img/features/empty-wallet1.png" alt="wallet">
 					</a>
-					<div class="business-section__planning-financial_title">Financial Planning System</div>
-					<div class="business-section__planning-financial_desk">Protocols apart from aengage models, pricing
-						billing</div>
+					<h2>Financial Planning System</h2>
+					<p>Protocols apart from aengage models, pricing billing</p>
 				</div>
 				<div class="business-section__planning_development">
 					<a href="" class="business-section__planning_code">
 						<img src="img/features/code-11.png" alt="code">
 					</a>
-					<div class="business-section__planning-development_title">Development Website and App</div>
-					<div class="business-section__planning-development_desk">Communication protocols apart from
-						engagement models</div>
+					<h2>Development Website and App</h2>
+					<p>Communication protocols apart from engagement models</p>
 				</div>
 				<div class="business-section__planning_analisis">
 					<a href="" class="business-section__planning_chart">
 						<img src="img/features/chart-square1.png" alt="chart">
 					</a>
-					<div class="business-section__planning-analisis_title">Market Analysis Project</div>
-					<div class="business-section__planning-analisis_desk">Protocols apart from aengage models, pricing
-						billing</div>
+					<h2>Market Analysis Project</h2>
+					<p>Protocols apart from aengage models, pricing billing</p>
 				</div>
 			</div>
 		</section>
@@ -157,52 +158,55 @@
 				</a>
 				<div class="footer__desc">Leading digital agency with solid design and development expertise. We build readymade websites, mobile applications, and elaborate online business services.</div>
 				<div class="footer__socials">
-					<div class="footer__socials_facebook">
+					<a href="/" class="footer__socials_facebook">
 						<img src="img/socials/facebook.svg" alt="facebook">
-					</div>
-					<div class="footer__socials_twitter">
+					</a>
+					<a href="/" class="footer__socials_twitter">
 						<img src="img/socials/twitter.svg" alt="twitter">
-					</div>
-					<div class="footer__socials_linkedin">
+					</a>
+					<a href="/" class="footer__socials_linkedin">
 						<img src="img/socials/linkedin.svg" alt="linkedin">
-					</div>
+					</a>
 				</div>
 			</div>
-			<div class="footer__start-center">
-				<div class="footer__start-center_title">What We Do</div>
-				<ul class="footer__start-center_ul">
-					<li class="footer__start-center_li"><a href="/" class="footer__start-center_a">Web Design</a></li>
-					<li class="footer__start-center_li"><a href="/" class="footer__start-center_a">App Design</a></li>
-					<li class="footer__start-center_li"><a href="/" class="footer__start-center_a">Social Media Manage</a></li>
-					<li class="footer__start-center_li"><a href="/" class="footer__start-center_a">Market Analysis Project</a></li>
-				</ul>
-			</div>
-			<div class="footer__center-center">
-				<div class="footer__center-center_title">Company</div>
-				<ul class="footer__center-center_ul">
-					<li class="footer__center-center_li"><a href="/" class="footer__center-center_a">About Us</a></li>
-					<li class="footer__center-center_li"><a href="/" class="footer__center-center_a">Career</a></li>
-					<li class="footer__center-center_li"><a href="/" class="footer__center-center_a">Become Investor</a></li>
-				</ul>	
-			</div>
-			<div class="footer__center-end">
-				<div class="footer__center-end_title">Support</div>
-				<ul class="footer__center-end_ul">
-					<li class="footer__center-end_li"><a href="/" class="footer__center-end_a">FAQ</a></li>
-					<li class="footer__center-end_li"><a href="/" class="footer__center-end_a">Policy</a></li>
-					<li class="footer__center-end_li"><a href="/" class="footer__center-end_a">Business</a></li>
-				</ul>
-			</div>
-			<div class="footer__end">
+			<div class="footer__container">
+				<div class="footer__start-center">
+					<div class="footer__start-center_title">What We Do</div>
+					<ul class="footer__start-center_ul">
+						<li class="footer__start-center_li"><a href="/" class="footer__start-center_a">Web Design</a></li>
+                        <li class="footer__start-center_li"><a href="/" class="footer__start-center_a">App Design</a></li>
+						<li class="footer__start-center_li"><a href="/" class="footer__start-center_a">Social Media Manage</a></li>
+						<li class="footer__start-center_li"><a href="/" class="footer__start-center_a">Market Analysis Project</a></li>
+					</ul>
+				</div>
+				<div class="footer__center-center">
+					<div class="footer__center-center_title">Company</div>
+					<ul class="footer__center-center_ul">
+						<li class="footer__center-center_li"><a href="/" class="footer__center-center_a">About Us</a></li>
+						<li class="footer__center-center_li"><a href="/" class="footer__center-center_a">Career</a></li>
+						<li class="footer__center-center_li"><a href="/" class="footer__center-center_a">Become Investor</a></li>
+					</ul>
+				</div>
+				<div class="footer__center-end">
+					<div class="footer__center-end_title">Support</div>
+					<ul class="footer__center-end_ul">
+						<li class="footer__center-end_li"><a href="/" class="footer__center-end_a">FAQ</a></li>
+						<li class="footer__center-end_li"><a href="/" class="footer__center-end_a">Policy</a></li>
+						<li class="footer__center-end_li"><a href="/" class="footer__center-end_a">Business</a></li>
+					</ul>
+				</div>
+				<div class="footer__end">
 				<div class="footer__end_title">Contact</div>
-				<ul class="footer__end_ul">
-					<li class="footer__end_li"><a href="/" class="footer__end_a">WhatsApp</a></li>
-					<li class="footer__end_li"><a href="/" class="footer__end_a">Support 24</a></li>
-				</ul>
+					<ul class="footer__end_ul">
+						<li class="footer__end_li"><a href="/" class="footer__end_a">WhatsApp</a></li>
+						<li class="footer__end_li"><a href="/" class="footer__end_a">Support 24</a></li>
+					</ul>
+				</div>
 			</div>
 		</footer>
-		<div class="footer__year">Copyright © 2022 Avi Yansah</div>
+		<div class="footer__year">Copyright © 2023 Avi Yansah</div>
 	</div>
+	<script src="script.js"></script>
 </body>
 </html>
 

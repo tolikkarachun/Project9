@@ -1,16 +1,23 @@
 .say-section {
-    margin-bottom: 148px;
+    margin-bottom: 148rem;
+    @include tablet {
+        margin-bottom: 65rem;
+    }
 
     &__title {
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        max-width: 485px;
+        max-width: 485rem;
         color: $black;
-        font-size: 40px;
+        font-size: 40rem;
         font-family: $ff-main;
         font-weight: 400;
-        margin-bottom: 17px;
+        margin-bottom: 17rem;
+        text-align: center;
+        @include mobile {
+            font-size: 30rem;
+        }
     }
 
     &__desc {
@@ -18,20 +25,30 @@
         align-items: center;
         justify-content: center;
         margin: 0 auto;
-        margin-bottom: 113px;
-        max-width: 556px;
+        margin-bottom: 113rem;
+        max-width: 556rem;
         color: $Gray;
-        font-size: 18px;
+        font-size: 18rem;
         font-family: $ff-main;
         font-weight: 400;
-        line-height: 25.60px;
+        line-height: 25.60rem;
+        text-align: center;
+        @include tablet {
+            margin-bottom: 40rem;
+        }
     }
 
     &__container-user {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 70px;
+        gap: 70rem;
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40rem;
+        }
     }
 
     &__user-img  {
@@ -39,7 +56,7 @@
 
         img {
             position: relative;
-            border-radius: 500px 0px 500px 500px;
+            border-radius: 500rem 0rem 500rem 500rem;
             object-fit: fill;
         }
     }
@@ -47,54 +64,57 @@
     &__info {
 
         &_name {
-            max-width: 156px;
+            max-width: 156rem;
             color: $black;
-            font-size: 24px;
+            font-size: 24rem;
             font-family: $ff-main;
             font-weight: 400;
-            margin-bottom: 21px;
+            margin: 0 auto;
+            margin-bottom: 21rem;
+            text-align: center;
         }
 
         &_response {
-            max-width: 532px;
+            max-width: 532rem;
             color: $darkGrey;
-            font-size: 16px;
+            font-size: 16rem;
             font-family: $ff-main;
             font-weight: 400;
-            line-height: 25.60px;
+            line-height: 25.60rem;
+            text-align: center;
         }
     }
 
     &__friends {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 26px;
+        gap: 26rem;
         &_a {
-            top: 65px;
+            top: 65rem;
             position: relative;
         }
 
         &_b {
             position: relative;
-            top: 205px;
-            right: 109px;
+            top: 205rem;
+            right: 109rem;
         }
 
         &_c {
             position: relative;
-            top: -105px;
-            right: -120px;
+            top: -105rem;
+            right: -120rem;
         }
 
         &_d {
             position: relative;
-            top: 5px;
+            top: 5rem;
         }
 
         &_f {
             position: relative;
-            top: 20px;
-            right: -95px;
+            top: 20rem;
+            right: -95rem;
         }
     }
 }

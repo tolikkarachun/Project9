@@ -1,10 +1,14 @@
+html {
+	font-size: 6.25%;
+}
 body {
 	font-family: $ff-main;
+	font-size: 16rem;
 }
-
-
 .container {
 	max-width: $container + 20px;
 	margin-inline: auto;
-	padding: 0 20px;
+	padding-left: 20rem;
+	padding-right: 55rem;
+
 }

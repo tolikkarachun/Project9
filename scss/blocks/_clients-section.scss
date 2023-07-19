@@ -2,35 +2,66 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
-    margin-bottom: 104px;
+    gap: 60rem;
+    margin-bottom: 104rem;
+
+    @include desktop-small {
+        display: flex;
+        flex-direction: column;
+    }
+        @include tablet-small {
+            margin-bottom: 50rem;
+        }
 
     &__title {
         color: $black;
-        font-size: 40px;
+        font-size: 40rem;
         font-family: $ff-main;
         font-weight: 400;
-        margin-bottom: 17px;
+        margin-bottom: 17rem;
+
+        @include tablet {
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 30rem;
+        }
     }
 
     &__desk {
-        max-width: 336px;
+        max-width: 336rem;
         color: $Gray;
-        font-size: 18px;
+        font-size: 18rem;
         font-family: $ff-main;
         font-weight: 400;
-        line-height: 28.80px;
+        line-height: 28.80rem;
+
+        @include tablet {
+            text-align: center;
+        }
     }
 
     &__logo {
         display: flex;
         align-items: center;
 
+
         &_a {
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            gap: 59px;
+            gap: 59rem;
+
+            @include tablet {
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                row-gap: 30rem;
+                column-gap: 200rem;
+            }
+
+            @include mobile {
+                column-gap: 100rem;
+            }
         }
     }
 }
