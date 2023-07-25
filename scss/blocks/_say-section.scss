@@ -96,14 +96,22 @@
 
         &_b {
             position: relative;
-            top: 205rem;
+            top: 180rem;
             right: 109rem;
+            @include tablet {
+                top: 215rem;
+                right: 145rem;
+            }
         }
 
         &_c {
             position: relative;
-            top: -105rem;
-            right: -120rem;
+            top: -90rem;
+            right: -90rem;
+            @include tablet {
+                top: -115rem;
+                right: -115rem;
+            }
         }
 
         &_d {
@@ -113,8 +121,11 @@
 
         &_f {
             position: relative;
-            top: 20rem;
-            right: -95rem;
+            top: 10rem;
+            right: -86rem;
+            @include tablet {
+                right: -90rem;
+            }
         }
     }
 }
